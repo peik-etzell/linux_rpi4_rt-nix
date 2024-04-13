@@ -21,6 +21,7 @@
       structuredExtraConfig = with lib.kernel;
         {
           # KVM = lib.mkForce no; # Not compatible with PREEMPT_RT. NOTE: this conflict shoulb be fixed in 5.16
+          ZFS = no;
           PREEMPT_RT = yes;
           EXPERT = yes; # PREEMPT_RT depends on it (in kernel/Kconfig.preempt)
           PREEMPT_VOLUNTARY = lib.mkForce no; # PREEMPT_RT deselects it.
