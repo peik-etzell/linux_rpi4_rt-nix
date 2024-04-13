@@ -9,10 +9,11 @@
   outputs = { self, nixpkgs, flake-compat }@inputs:
     let
       systems = nixpkgs.lib.platforms.linux;
-      lib = nixpkgs.lib;
+      inherit (nixpkgs) lib;
       packagePaths = rec {
         rpi4_rt_5_15 = ./packages/linux_rpi4_rt_5_15;
-        rpi4_rt = rpi4_rt_5_15;
+        rpi4_rt_6_1 = ./packages/linux_rpi4_rt_6_1;
+        rpi4_rt = rpi4_rt_6_1;
       };
     in rec {
       packages = lib.genAttrs systems (system:
