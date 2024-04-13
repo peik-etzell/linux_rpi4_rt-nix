@@ -8,7 +8,7 @@
         owner = "raspberrypi";
         repo = "linux";
         rev = "bfe927647253ab3a86be16320baa1579518c6786";
-        sha256 = "1k2c7kh3dkcpaxwn6b78087nbcc2l3g0gdjrmfbvsig9w3i5gppj";
+        sha256 = "1qsn2wm3ry3fs8pp327yznrxzfl7crmm7zcs2nykyrma2p7k309z";
       };
       kernelPatches = [{
         name = "rt";
@@ -38,7 +38,7 @@
       owner = "raspberrypi";
       repo = "firmware";
       rev = "fa7d6b8f5d4f103987ffefc7202ed25c93cd3087";
-      sha256 = "1n2p7dmqp3slpl7aykcrwwk4vc54in2g86bgf3dlybz5y32qi8pj";
+      sha256 = "16wwsqgg7x26fqhc93v144xqm5clfqrkm8bz2f26v177jlr57w42";
     };
   });
 }
